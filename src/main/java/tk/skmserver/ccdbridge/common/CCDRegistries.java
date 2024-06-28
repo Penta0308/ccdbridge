@@ -1,27 +1,11 @@
 package tk.skmserver.ccdbridge.common;
 
 import cc.tweaked_programs.cccbridge.common.computercraft.TweakedPeripheralProvider;
-import cc.tweaked_programs.cccbridge.common.minecraft.TweakedBlockItem;
-import cc.tweaked_programs.cccbridge.common.minecraft.blockEntity.SourceBlockEntity;
-import com.simibubi.create.AllInteractionBehaviours;
-import com.simibubi.create.content.redstone.displayLink.AllDisplayBehaviours;
 import dan200.computercraft.api.ForgeComputerCraftAPI;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.decoration.PaintingVariant;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import tk.skmserver.ccdbridge.common.modloader.CCDBridge;
 
-@SuppressWarnings({"DataFlowIssue", "unused"})
+@SuppressWarnings({"unused"})
 public class CCDRegistries {
     //private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CCDBridge.MODID);
     //private static final DeferredRegister<PaintingVariant> PAINTINGS = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, CCDBridge.MODID);

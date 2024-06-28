@@ -9,48 +9,20 @@ import dan200.computercraft.api.lua.LuaFunction;
 import dan200.computercraft.api.peripheral.IComputerAccess;
 import dan200.computercraft.core.computer.ComputerSide;
 import net.minecraft.core.Direction;
-import tk.skmserver.ccdbridge.common.minecraft.mixin.MixinVatControllerBlockEntity;
 import tk.skmserver.ccdbridge.common.minecraft.mixininterface.VatControllerBlockEntityMixinInterface;
 
-
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-import static org.apache.commons.lang3.ClassUtils.getName;
-
-/**
- * This peripheral is used by the Vat. It works very similar to the Redstone API.
- *
- * @version 1.0
- */
 public class VatBlockPeripheral extends TweakedPeripheral<VatControllerBlockEntity> {
     public static double getVersion() {
         return 1.0D;
     }
 
-    private final List<IComputerAccess> pcs = new LinkedList<>();
-
     public VatBlockPeripheral(VatControllerBlockEntity blockentity) {
         super("vat", blockentity);
-    }
-
-    public Direction getActualSide(ComputerSide side) {
-        VatControllerBlockEntity be = getTarget();
-
-        if (be != null) {
-            Direction facing = getTarget().getBlockState().getValue(VatControllerBlock.FACING);
-            return switch (side.getName()) {
-                case ("front") -> facing.getOpposite();
-                case ("back") -> facing;
-                case ("left") -> facing.getClockWise();
-                case ("right") -> facing.getCounterClockWise();
-                case ("top") -> Direction.DOWN;
-                case ("bottom") -> Direction.UP;
-                default -> Direction.NORTH;
-            };
-        }
-
-        return Direction.NORTH;
     }
 
     @LuaFunction
@@ -73,7 +45,7 @@ public class VatBlockPeripheral extends TweakedPeripheral<VatControllerBlockEnti
 
     @LuaFunction
     public final float getUVStrength() throws LuaException {
-        VatControllerBlockEntityMixinInterface be = (VatControllerBlockEntityMixinInterface) (Object) getTarget();
+        VatControllerBlockEntityMixinInterface be = (VatControllerBlockEntityMixinInterface) getTarget();
         if (be != null) {
             return be.ccdbridge$getUVPower();
         }
