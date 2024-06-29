@@ -3,6 +3,8 @@
 Available for **1.20.1 Forge**.
 Requires [CC:C Bridge](https://github.com/tweaked-programs/cccbridge) *1.6.3* and [Destroy](https://github.com/petrolpark/Destroy/) *0.8*!
 
+[![Download at Modrinth](https://img.shields.io/modrinth/dt/7ZVzo8Of?logo=modrinth)](https://modrinth.com/mod/ccdbridge)
+
   
 About
 -----
