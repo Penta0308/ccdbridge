@@ -10,7 +10,7 @@ This mod adds interop between [CC:Tweaked](https://github.com/cc-tweaked/cc-twea
 
 Description
 -----------
-![vat_with_computer.png](https://github.com/Penta0308/ccdbridge/docs/vat_with_computer.png "vat_with_computer.png")
+![vat_with_computer.png](https://github.com/Penta0308/ccdbridge/main/docs/vat_with_computer.png "vat_with_computer.png")
 
 
 Vat Controller exposes following Lua functions:
@@ -23,4 +23,4 @@ getFluidLevel(): float
 getMixture(): Map<String, Float>
 ```
 
-![screen_with_periph.png](https://github.com/Penta0308/ccdbridge/docs/screen_with_periph.png "screen_with_periph.png")
+![screen_with_periph.png](https://github.com/Penta0308/ccdbridge/main/docs/screen_with_periph.png "screen_with_periph.png")
