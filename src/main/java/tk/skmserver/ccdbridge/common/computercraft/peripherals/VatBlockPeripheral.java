@@ -70,7 +70,7 @@ public class VatBlockPeripheral extends TweakedPeripheral<VatControllerBlockEnti
     public final Map<String, Float> getMixture() throws LuaException {
         VatControllerBlockEntity be = getTarget();
         if (be != null) return be.getCombinedReadOnlyMixture().getContents(false).stream().collect(Collectors.toMap(
-                Molecule::getFROWNSCode,
+                Molecule::getFullID,
                 m -> be.getCombinedReadOnlyMixture().getConcentrationOf(m)
                 ));
 
