@@ -25,4 +25,8 @@ getFluidLevel(): float
 getMixture(): Map<String, Float>
 ```
 
+
+![computer_v110.png](https://github.com/Penta0308/ccdbridge/blob/main/docs/Screenshot%202024-07-31%20012012.png "computer_v110.png")
+New Format (since v1.1.0): Vat getMixture key is now ID by default (use FROWNS as fallback).
+
 ![screen_with_periph.png](https://github.com/Penta0308/ccdbridge/blob/main/docs/screen_with_periph.png "screen_with_periph.png")
