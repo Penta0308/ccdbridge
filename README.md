@@ -1,7 +1,7 @@
 # CC:Destroy Bridge
 
 Available for **1.20.1 Forge**.
-Requires [CC:C Bridge](https://github.com/tweaked-programs/cccbridge) *1.6.3* and [Destroy](https://github.com/petrolpark/Destroy/) *0.8*!
+Requires [Create] *6.0.8* and [CC:C Bridge](https://github.com/tweaked-programs/cccbridge) *1.7.1* and [Destroy](https://github.com/petrolpark/Destroy/) *0.1.3-i+0*!
 
   
 About
