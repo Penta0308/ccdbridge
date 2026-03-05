@@ -1,7 +1,7 @@
 package tk.skmserver.ccdbridge.common.minecraft.mixin;
 
 import cc.tweaked_programs.cccbridge.common.minecraft.blockEntity.PeripheralBlockEntity;
-import com.petrolpark.destroy.block.entity.VatControllerBlockEntity;
+import com.petrolpark.destroy.core.chemistry.vat.VatControllerBlockEntity;
 import dan200.computercraft.api.peripheral.IPeripheral;
 import net.minecraft.core.Direction;
 import org.jetbrains.annotations.NotNull;
